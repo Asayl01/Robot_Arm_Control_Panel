@@ -111,7 +111,7 @@ C:
    ![pc-demo](demo2.gif)
 
    From an iPad:
-   ![ipad-demo](ipad_view.jpg)
+   ![ipad-demo](ipad.jpg)
 
 3. **ESP32 Access (Optional)**  
    - ESP32 can send HTTP requests to the same IP  
