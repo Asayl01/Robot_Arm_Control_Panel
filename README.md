@@ -5,3 +5,10 @@ It allows full control of servo positions via sliders and stores custom poses in
 
 > The webpage can be accessed from other devices (e.g. phone, tablet, or ESP32) using the local IP of the XAMPP server.
 
+##  Table of Contents
+- [Features](#-features)  
+- [How to Run](#-how-to-run)  
+- [ESP32 Access](#-esp32-access)  
+- [File Structure](#-file-structure)  
+- [Screenshots](#-screenshots)  
+- [Notes](#-notes)
