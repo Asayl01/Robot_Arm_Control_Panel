@@ -103,6 +103,16 @@ C:
    - Open a browser and go to:  
      `http://<local-ip>/robot-arm-control/`
 
+   <br>
+
+   ####  Example Access
+
+   ** From the same PC (GIF):**  
+   ![pc-demo](demo1.gif)
+
+   ** From an iPad (Image):**  
+   ![ipad-demo](ipad_view.jpg)
+
 3. **ESP32 Access (Optional)**  
    - ESP32 can send HTTP requests to the same IP  
    - Example:
