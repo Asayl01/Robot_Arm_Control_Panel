@@ -91,7 +91,6 @@ C:
 
 ---
 
-## 🌐 Access from Other Devices (ESP32 / Phone / Tablet)
 
 ##  Access from Other Devices (ESP32 / Phone / Tablet)
 
