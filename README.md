@@ -80,3 +80,17 @@ C:
             └── style
 
 ```
+
+### 5. Run the Web App
+
+- Open your browser and navigate to:  
+  `http://localhost/robot-arm-control/`
+
+---
+
+## 🌐 Access from Other Devices (ESP32 / Phone / Tablet)
+
+- Make sure the device is connected to the **same Wi-Fi network** as your computer
+- Use the local IP of your computer instead of `localhost`  
+  Example: `http://192.168.x.x/robot-arm-control/`
+- You can find your local IP by running `ipconfig` in the Command Prompt and checking `IPv4 Address`
