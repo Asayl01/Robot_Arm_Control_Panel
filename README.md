@@ -93,7 +93,25 @@ C:
 
 ## 🌐 Access from Other Devices (ESP32 / Phone / Tablet)
 
-- Make sure the device is connected to the **same Wi-Fi network** as your computer
-- Use the local IP of your computer instead of `localhost`  
-  Example: `http://192.168.x.x/robot-arm-control/`
-- You can find your local IP by running `ipconfig` in the Command Prompt and checking `IPv4 Address`
+##  Access from Other Devices (ESP32 / Phone / Tablet)
+
+1. **Find Your Local IP Address**
+   - On your computer, open **Command Prompt**
+   - Type the following command and press Enter:
+     ```
+     ipconfig
+     ```
+   - Look for the line that says:  
+     `IPv4 Address` → this is your local IP (e.g., `192.168.1.100`)
+
+2. **Open the Web App from Another Device**
+   - Make sure the device (phone, tablet, or other PC) is connected to the **same Wi-Fi**
+   - Open a browser and go to:  
+     ```
+     http://<your-local-ip>/robot-arm-control/
+     ```
+   - Example:  
+     `http://192.168.1.100/robot-arm-control/`
+
+3. **Connect from ESP32 (Optional)**
+  
