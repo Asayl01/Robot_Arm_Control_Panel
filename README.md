@@ -75,7 +75,7 @@ Copy the following files into your `htdocs` directory:
 C:
 └── xampp
     └── htdocs
-        └── robot-arm-control
+        └── robot_control
             ├── db_connection.php
             ├── get_poses.php
             ├── get_run_pose.php
