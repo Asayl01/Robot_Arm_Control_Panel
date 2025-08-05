@@ -127,3 +127,7 @@ If you want to access the control panel from an ESP32 device, follow these steps
 
 4. Then go to: `Tools` → `Board` → `Boards Manager`
 5. Search for **ESP32 by Espressif Systems**, then click **Install**
+6. After installation, go to:  
+   `Tools` → `Board` → and select your ESP32 board.  
+   For most boards, choose:  
+**"WEMOS D1 MINI ESP32"**
