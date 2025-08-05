@@ -114,7 +114,7 @@ C:
    ![ipad-demo](ipad.jpg)
 
 
-### 3. ESP32 Access (Optional)
+### 3. ESP32 Access 
 
 If you want to access the control panel from an ESP32 device, follow these steps to set it up in the Arduino IDE:
 
