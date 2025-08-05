@@ -144,7 +144,7 @@ If you want to access the control panel from an ESP32 device, follow these steps
 
 ![esp](esp.jpg)
 
-#### ✅ Step 3: ESP32 Test Code (GET Request)
+####  Step 3: ESP32 Test Code (GET Request)
 
 Once your ESP32 board is working correctly, you can use it to fetch live servo data from your local PHP server.
 
@@ -204,7 +204,7 @@ void loop() {
   // Nothing here for now
 }
 ```
-### Result
+#### Result
 
 > Below is an actual screenshot of the ESP32 receiving data from the local PHP server:
 
