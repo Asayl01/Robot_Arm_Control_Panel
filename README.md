@@ -204,3 +204,8 @@ void loop() {
   // Nothing here for now
 }
 ```
+### Result
+
+> Below is an actual screenshot of the ESP32 receiving data from the local PHP server:
+
+![esp-wifi](esp_wifi.gif)
