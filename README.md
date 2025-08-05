@@ -2,13 +2,15 @@
 
 This project is a web-based control panel for a 6-servo robotic arm, created using XAMPP. It allows users to control servo positions through sliders and save custom poses into a local MySQL database.
 
-##  Table of Contents
-- [Features](#-features)  
-- [How to Run](#-how-to-run)  
-- [ESP32 Access](#-esp32-access)  
-- [File Structure](#-file-structure)  
-- [Screenshots](#-screenshots)  
-- [Notes](#-notes)
+## 📋 Table of Contents
+- [Features](#features)
+- [How to Run](#how-to-run)
+- [Access from Other Devices (ESP32 / Phone / Tablet)](#access-from-other-devices-esp32--phone--tablet)
+- [ESP32 Access](#esp32-access)
+  - [Step 1: Install ESP32 Board in Arduino IDE](#step-1-install-esp32-board-in-arduino-ide)
+  - [Step 2: Test the Board with Blink Example](#step-2-test-the-board-with-blink-example)
+  - [Step 3: ESP32 Test Code (GET Request)](#step-3-esp32-test-code-get-request)
+  - [Result](#result)
 
 ##  Features
 - 6 sliders to control servo1 to servo6  
