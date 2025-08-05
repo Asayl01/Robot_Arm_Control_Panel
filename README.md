@@ -16,3 +16,49 @@ This project is a web-based control panel for a 6-servo robotic arm, created usi
 - Clean web interface using HTML, CSS, JS, and PHP  
 - Built on a local server using XAMPP  
 - Can be accessed from other devices (like a **phone**, **tablet**, or even an **ESP32**) using the local IP of the XAMPP server
+
+##  How to Run 
+
+### 1. Install XAMPP
+- Download from: [https://www.apachefriends.org](https://www.apachefriends.org)
+- Install it and open the **XAMPP Control Panel**
+
+### 2. Start Apache & MySQL
+- In the control panel, start:
+  - **Apache**
+  - **MySQL**
+
+### 3. Create the Database
+- Go to: `http://localhost/phpmyadmin`
+- Create a new database named: `robot_arm`
+- Create the following two tables manually:
+
+#### Table: `pose`
+
+| Column   | Type    | Attributes                  |
+|----------|---------|-----------------------------|
+| id       | INT     | PRIMARY KEY, AUTO_INCREMENT |
+| servo1   | INT     |                             |
+| servo2   | INT     |                             |
+| servo3   | INT     |                             |
+| servo4   | INT     |                             |
+| servo5   | INT     |                             |
+| servo6   | INT     |                             |
+
+#### Table: `run`
+
+| Column   | Type    | Attributes       |
+|----------|---------|------------------|
+| servo1   | INT     |                  |
+| servo2   | INT     |                  |
+| servo3   | INT     |                  |
+| servo4   | INT     |                  |
+| servo5   | INT     |                  |
+| servo6   | INT     |                  |
+| status   | TINYINT | Default: 0       |
+
+---
+
+### 4. Add Project Files
+
+Copy the following files into your `htdocs` directory (e.g., `C:\xampp\htdocs\robot-arm-control`):
