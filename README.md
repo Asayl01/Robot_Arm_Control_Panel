@@ -107,10 +107,10 @@ C:
 
    ####  Example Access
 
-   ** From the same PC (GIF):**  
-   ![pc-demo](demo1.gif)
+   From the same PC:
+   ![pc-demo](demo2.gif)
 
-   ** From an iPad (Image):**  
+   From an iPad:
    ![ipad-demo](ipad_view.jpg)
 
 3. **ESP32 Access (Optional)**  
