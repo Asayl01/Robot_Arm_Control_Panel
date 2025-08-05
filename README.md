@@ -144,3 +144,63 @@ If you want to access the control panel from an ESP32 device, follow these steps
 
 ![esp](esp.jpg)
 
+#### ✅ Step 3: ESP32 Test Code (GET Request)
+
+Once your ESP32 board is working correctly, you can use it to fetch live servo data from your local PHP server.
+
+Here’s a complete example using `WiFi.h` and `HTTPClient.h`:
+
+```cpp
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+// Replace with your Wi-Fi credentials
+const char* ssid = "YOUR_WIFI_NAME";         // ← Your Wi-Fi name (SSID)
+const char* password = "YOUR_WIFI_PASSWORD"; // ← Your Wi-Fi password
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("🚀 Starting ESP32...");
+
+  // Connect to Wi-Fi
+  WiFi.begin(ssid, password);
+  Serial.print("Connecting to WiFi");
+
+  // Wait until connected
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println();
+  Serial.println("✅ WiFi connected!");
+
+  // Send HTTP GET request to the server
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+
+    // Replace with your actual local IP and PHP endpoint
+    String url = "http://YOUR_LOCAL_IP/robot_control/get_run_pose.php";
+    http.begin(url); // Initialize HTTP client
+
+    int httpCode = http.GET(); // Send GET request
+
+    if (httpCode > 0) {
+      // If response is OK, print it to Serial Monitor
+      String payload = http.getString();
+      Serial.println("📦 Server Response:");
+      Serial.println(payload);
+    } else {
+      // If error, print the error
+      Serial.print("❌ HTTP Request failed: ");
+      Serial.println(http.errorToString(httpCode).c_str());
+    }
+
+    http.end(); // Close connection
+  }
+}
+
+void loop() {
+  // Nothing here for now
+}
+```
