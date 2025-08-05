@@ -92,7 +92,7 @@ C:
 ### 5. Run the Web App
 
 - Open your browser and navigate to:  
-  `http://localhost/robot-arm-control/` – to control the robotic arm 
+  `http://localhost/robot_control/` – to control the robotic arm 
   `http://localhost/robot_control/get_run_pose.php` – to fetch the currently active pose
 
   ![demo1](demo1.gif)
@@ -109,7 +109,7 @@ C:
 2. **Access from Another Device**  
    - Make sure the device (phone, tablet, etc.) is on the same Wi-Fi network  
    - Open a browser and go to:  
-     `http://<local-ip>/robot-arm-control/`
+     `http://<local-ip>/robot_control/`
 
    <br>
 
