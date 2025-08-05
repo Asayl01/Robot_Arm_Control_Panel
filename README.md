@@ -138,7 +138,9 @@ If you want to access the control panel from an ESP32 device, follow these steps
 2. Go to: `File` → `Examples` → `01.Basics` → `Blink`  
 3. Select the correct board: **WEMOS D1 MINI ESP32**  
 4. Select the correct COM port from `Tools → Port`  
-5. Click **Upload**  
+5. Click **Upload**
+   
+   > The onboard LED should start blinking
+
 ![esp](esp.jpg)
 
-> The onboard LED should start blinking
