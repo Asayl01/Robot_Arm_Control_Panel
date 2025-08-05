@@ -113,11 +113,17 @@ C:
    From an iPad:
    ![ipad-demo](ipad.jpg)
 
-3. **ESP32 Access (Optional)**  
-   - ESP32 can send HTTP requests to the same IP  
-   - Example:
-     ```cpp
-     http.begin("http://192.168.1.100/robot-arm-control/save_pose.php");
-     http.GET(); // or use POST
-     http.end();
-     ```
+
+### 3. ESP32 Access (Optional)
+
+If you want to access the control panel from an ESP32 device, follow these steps to set it up in the Arduino IDE:
+
+#### Step 1: Install ESP32 Board in Arduino IDE
+
+1. Open **Arduino IDE**
+2. Go to `File` → `Preferences`
+3. In the **Additional Board Manager URLs** field, paste this link:  
+   `https://dl.espressif.com/dl/package_esp32_index.json`
+
+4. Then go to: `Tools` → `Board` → `Boards Manager`
+5. Search for **ESP32 by Espressif Systems**, then click **Install**
