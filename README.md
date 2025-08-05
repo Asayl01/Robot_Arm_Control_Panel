@@ -61,4 +61,22 @@ This project is a web-based control panel for a 6-servo robotic arm, created usi
 
 ### 4. Add Project Files
 
-Copy the following files into your `htdocs` directory (e.g., `C:\xampp\htdocs\robot-arm-control`):
+Copy the following files into your `htdocs` directory:
+
+```bash
+C:
+└── xampp
+    └── htdocs
+        └── robot-arm-control
+            ├── db_connection.php
+            ├── get_poses.php
+            ├── get_run_pose.php
+            ├── index.php
+            ├── load_pose.php
+            ├── remove_pose.php
+            ├── run_now.php
+            ├── save_pose.php
+            ├── update_status.php
+            └── style
+
+```
